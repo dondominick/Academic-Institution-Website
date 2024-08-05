@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+nav {
+  border: 1px solid black;
+  background-color: rgba(217, 217, 217, 1);
+  margin-bottom: 25px;
+}
+
+nav a {
+  margin-right: 15px;
+  color: black;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav img {
+  max-width: 50px;
+  object-fit: cover;
+}
+
+/* Main content */
+
+header {
+  text-align: center;
+  overflow: hidden;
+  background-image: url(/resource/header-img.jpeg);
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  margin: 0 25px 50px;
+}
+
+header .container {
+  background-color: rgba(15, 15, 15, 0.8);
+  color: white;
+  padding: 30px 50px;
+}
+
+main .container {
+  max-width: 85%;
+  margin: 10px auto 35px;
+}
+main {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+main p {
+  max-width: 60%;
+  margin: auto;
+}
+
+main button {
+  padding: 10px 25px;
+}
+
+main .small-container {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 170px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card:hover .overlay {
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.card .overlay {
+  background-color: rgba(0, 0, 0, 0.807);
+  position: relative;
+  transform: translateY(-101%);
+  z-index: 12;
+  height: 201px;
+  opacity: 0;
+}
+
+.overlay {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+footer {
+  display: flex;
+  background-color: rgba(217, 217, 217, 1);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+footer img {
+  max-width: 150px;
+}
+
+footer .small-container {
+  display: flex;
+  align-items: center;
+}
+footer .socials {
+  text-align: center;
+}
