@@ -35,7 +35,7 @@ nav img {
 
 header {
   height: 500px;
-  background-image: url("/resource/background-image.jpg");
+  background-image: url(/resource/background-image.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
