@@ -38,7 +38,7 @@ nav img {
 header {
   text-align: center;
   overflow: hidden;
-  background-image: url(/resource/header-img.jpeg);
+  background-image: url("../resource/header-img.png");
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
