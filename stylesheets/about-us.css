@@ -32,6 +32,9 @@ nav img {
   object-fit: cover;
 }
 /* main content */
+main {
+  margin-bottom: 100px;
+}
 
 header {
   height: 500px;
@@ -42,4 +45,69 @@ header {
   background-position-y: 55%;
 }
 
+.big-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25px auto;
+}
+
+.vm {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  text-align: justify;
+}
+
+.vision {
+  flex-basis: 40%;
+}
+
+.mission {
+  flex-basis: 40%;
+}
+
+.cv {
+  margin: 50px auto;
+  background-color: beige;
+  padding: 15px 15px;
+  min-height: 250px;
+}
+
+.cv p {
+  width: 60%;
+  margin: auto;
+}
+.history {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
+.big-container p {
+  margin-top: 20px;
+}
+
 /* footer */
+
+footer {
+  display: flex;
+  background-color: rgba(217, 217, 217, 1);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+footer img {
+  max-width: 150px;
+}
+
+footer .small-container {
+  display: flex;
+  align-items: center;
+}
+footer .socials {
+  text-align: center;
+}
