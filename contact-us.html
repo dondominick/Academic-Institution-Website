@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USWP</title>
     <link rel="stylesheet" href="stylesheets/contact-us.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="inter">
     <nav>
-      <ul>
-        <a href="index.html">
+      <button id="menu_btn"><i class="fa-solid fa-bars"></i></button>
+      <ul class="close">
+        <a href="index.html" id="logo">
           <li><img src="resource/logo.png" alt="picture of company logo" /></li>
         </a>
         <a href="index.html"><li>Home</li></a>
@@ -72,5 +81,18 @@
         <p>Follow Us On: <br /><img src="resource/socmed.png" alt="" /></p>
       </div>
     </footer>
+    <script>
+      const menu_btn = document.querySelector("#menu_btn");
+      menu_btn.onclick = () => {
+        const nav_menu = document.querySelector("nav ul");
+
+        if (nav_menu.classList.contains("close")) {
+          nav_menu.classList.remove("close");
+        } else {
+          nav_menu.classList.add("close");
+        }
+        console.log("working");
+      };
+    </script>
   </body>
 </html>

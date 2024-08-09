@@ -8,12 +8,23 @@
     <meta name="keywords" content="USWP University" />
     <meta name="author" content="Don Enargan" />
     <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="inter">
     <nav>
-      <ul>
+      <button id="menu_btn"><i class="fa-solid fa-bars"></i></button>
+
+      <ul class="close">
         <a href="index.html">
-          <li><img src="resource/logo.png" alt="picture of company logo" /></li>
+          <li id="logo">
+            <img src="resource/logo.png" alt="picture of company logo" />
+          </li>
         </a>
         <a href="index.html"><li>Home</li></a>
 
@@ -22,6 +33,19 @@
         <a href="contact-us.html"> <li>Contact Us</li> </a>
       </ul>
     </nav>
+    <script>
+      const menu_btn = document.querySelector("#menu_btn");
+      menu_btn.onclick = () => {
+        const nav_menu = document.querySelector("nav ul");
+
+        if (nav_menu.classList.contains("close")) {
+          nav_menu.classList.remove("close");
+        } else {
+          nav_menu.classList.add("close");
+        }
+        console.log("working");
+      };
+    </script>
     <header>
       <div class="container">
         <h1>University of Southwestern Philippines</h1>
@@ -30,7 +54,7 @@
     <main>
       <div class="container">
         <h2>Programs</h2>
-        <div class="small-container">
+        <div class="small-container programs">
           <div class="card">
             <img src="resource/card1.png" alt="" />
             <div class="overlay">
